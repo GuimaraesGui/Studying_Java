@@ -104,14 +104,6 @@ public class TiposDeVariaveis {
         long matricula = 23113160063L;
         float altura = 1.77F;
         double salario = 1350;
-
-        System.out.print(nome + " - Tipo: String" + "\n");
-        System.out.print(idade + " - Tipo: byte" + "\n");
-        System.out.print(anoNascimento + " - Tipo: short" + "\n");
-        System.out.print(cep + " - Tipo: int" + "\n");
-        System.out.print(matricula + " - Tipo: long" + "\n");
-        System.out.print(altura + " - Tipo: float" + "\n");
-        System.out.print(salario + " - Tipo: double");
     }
 }
 ```
@@ -119,7 +111,7 @@ public class TiposDeVariaveis {
 - O tipo **long** precisa da letra "L" no final do valor da variável para identificação do tipo;
 - O tipo **float** precisa da letra "F" no final do valor da variável para identificação do tipo;
 
-### Variáveis e Constantes
+### 2.4. Variáveis e Constantes
 Variáveis se modificam, já constantes não.
 
 Exemplo:
@@ -151,13 +143,13 @@ Referência bibliográfica:
         color: red;
     }
     h2 {
-        color: green;
-    }
-    h3 {
         color: blue;
     }
+    h3 {
+        color: green;
+    }
     p {
-        color: ;
+        color: silver;
     }
     ul {
         color: yellow;
