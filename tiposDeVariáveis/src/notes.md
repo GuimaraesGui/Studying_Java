@@ -134,6 +134,62 @@ public class Exemplo {
 - A notação **final** sinaliza uma constante;
 - Ao executar a última linha, estaremos diante de um erro, que indica justamente a impossibilidade de uma constante ser alterada;
 
+## 3. Operadores
+### 3.1. Operadores Aritméticos
+
+Os operadores aritméticos são:
+- **Soma**: +
+- **Subtração**: -
+- **Multiplicação**: *
+- **Divisão**: /
+- **Módulo**: %
+  
+Exemplo:
+```Java
+public class Exemplo {
+    public static void main(String[] args){
+        //classe Operadores.java
+        double soma = 10.5 + 15.7;
+        int subtração = 113 - 25;
+        int multiplicacao = 20 * 7;
+        int divisao = 15 / 3;
+        int modulo = 18 % 3;
+        double resultado = (10 * 7) + (20/4);
+    }
+}
+```
+
+### 3.2. Operadores unitários
+
+Os operadores unitários são:
+
+- **(+)**: Operador unário de valor positivo – números são positivos sem esse operador explicitamente;
+- **(-)**: Operador unário de valor negativo – nega um número ou expressão aritmética;
+- **(++)** :Operador unário de incremento de valor – incrementa o valor em 1 unidade;
+- **(--)**: Operador unário de decremento de valor – decrementa o valor em 1 unidade;
+- **(!)**: Operador unário lógico de negação – nega o valor de uma expressão booleana;
+
+Exemplo:
+```Java
+public class Exemplo{
+    public static main(String[] args){
+        int a = 5;
+
+        a++; //Incrimenta a variável.
+        a--; //Decrementa a variável.
+
+        System.out.print(++a); //Incrimenta a variável antes dela ser impressa.
+        System.out.print(a++); //Incrimenta a variável depois dela ser impressa.
+        System.out.print(--a); //Decrementa a variável antes dela ser impressa.
+        System.out.print(a--); //Incrimenta a variável depois dela ser impressa.
+    }
+}
+```
+
+### 3.3. Operadores ternários
+
+
+
 --- 
 Referência bibliográfica:  
 - [Documentação Java DIO.](https://felipe-silva-aguiar.gitbook.io/dio-java/gitbook/sintaxe/anatomia-das-classes)
