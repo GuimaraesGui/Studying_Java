@@ -1,5 +1,4 @@
 # Anotações de estudo sobre a linguagem Java.
-![logoJava](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.stickersdevs.com.br%2Fshop%2Fstickers%2Fjava-sticker%2F&psig=AOvVaw2iDOuRHl8T23B7KgAxKknA&ust=1715106589187000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCNDynorU-YUDFQAAAAAdAAAAABAE)
 
 ## 1. Anatomia das Classes:
 ### 1.1. Sintaxe de declaração de uma nova classe
@@ -53,7 +52,7 @@ Observações:
 
 *Estrutura:*
 
-     Tipo NomeBemDefinido = Atribuição; (É opcional em alguns casos)
+    <Tipo> <NomeBemDefinido> = <Atribuição>; (É opcional em alguns casos)
 
 *Exemplos*:
 
@@ -64,11 +63,12 @@ Observações:
 **Modelo de declaração de método em Java:**  
 *Estrutura:*    
 
-    TipoRetorno NomeObjetivoNoInfinitivo Parametros()
+    <TipoRetorno> <NomeObjetivoNoInfinitivo> (Parametros)
 
 *Exemplos:*
 
     int somar (int numeroUm, int numero2)
+    
     String formatarCep (long cep)
 
 --- 
