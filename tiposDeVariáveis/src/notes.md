@@ -32,7 +32,7 @@ Observações:
 - **{System.out.println()}**: Corresponde ao corpo da classe. <u>**Sua barreira ou limite é a Main**</u>, também chamada de **método**.
 - ***Throws Exception*** é opcional.
 
-## 1.3. Padrão de nomeclatura
+### 1.3. Padrão de nomeclatura
 **Arquivo *.java*:** Começar com a letra *MAIÚSCULA*. Se a palavra for composta a a segunda deve iniciar em *MAIÚSCULA* também.
 
 **Nomeclatura de classe no arquivo:** A classe deve conter o mesmo nome do arquivo *.java*.
@@ -47,7 +47,7 @@ Observações:
 - Não pode utilizar palavras reservadas da linguagem de programação..
 - O nome deve ser único dentro do escopo.
 
-## Declaração de variáveis e métodos
+### Declaração de variáveis e métodos
 **Modelo de declaração de variável em Java::**   
 
 *Estrutura:*
@@ -187,6 +187,150 @@ public class Exemplo{
 ```
 
 ### 3.3. Operadores ternários
+
+O Operador de Condição Ternária é uma forma resumida para definir uma condição e escolher por um dentre dois valores.
+
+O operador ternário é representado pelos símbolos **?** e **:** utilizados na seguinte estrutura de sintaxe:
+
+< Expressão Condicional> ? < Caso condição seja true> : < Caso condição seja false>
+
+```Java
+// classe Operadores.java
+int a, b;
+
+a = 5;
+b = 6;
+
+/* EXEMPLO DE CONDICIONAL UTILIZANDO UMA ESTRUTURA IF/ELSE
+if(a==b)
+   resultado = "verdadeiro";
+else
+   resultado = "falso";
+*/
+
+//MESMA CONDICIONAL, MAS DESSA VEZ, UTILIZANDO O OPERADOR CONDICIONAL TERNÁRIO
+String resultado = (a==b) ? "verdadeiro" : "false";
+
+System.out.println(valor);
+```
+
+### 3.4. Operadores relacionais
+
+- **==**:  Quando desejamos verificar se uma variável é IGUAL A outra.
+- **!=**: Quando desejamos verificar se uma variável é DIFERENTE da outra.
+- **>**: Quando desejamos verificar se uma variável é MAIOR QUE a outra.
+- **>=**: Quando desejamos verificar se uma variável é MAIOR OU IGUAL a outra.
+- **<**: Quando desejamos verificar se uma variável é MENOR QUE outra.
+- **<=**: Quando desejamos verificar se uma variável é MENOR OU IGUAL a outra.
+
+```Java
+public class Exemplo{
+    public static main(String[] args){
+        //classe Operadores.java
+        int numero1 = 1;
+        int numero2 = 2;
+
+        if(numero1 > numero2)
+	        System.out.print("Numero 1 maior que numero 2");
+
+        if(numero1 < numero2)
+	        System.out.print("Numero 1 menor que numero 2");
+
+        if(numero1 >= numero2)
+        	System.out.print("Numero 1 maior ou igual que numero 2");
+
+        if(numero1 <= numero2)
+	        System.out.print("Numero 1 menor ou igual que numero 2");
+
+        if(numero1 != numero2)
+	        System.out.print("Numero 1 é diferente de numero 2");jav
+    }
+}
+```
+
+- **O.B.S: Quando desejamos comparar objetos, utilizamos o método .equals().**
+
+*Exemplo:*
+
+```Java
+// ComparacaoAvancada.java
+ public static void main(String[] args) {
+        
+        int numero1 = 130;
+        int numero2 = 130;
+        System.out.println(numero1 == numero2); //true
+        
+        Integer numero1 = 130;
+        Integer numero2 = 130;
+
+        System.out.println(numero1 == numero2); //false
+        
+        // A razão pela qual o resultado é false, é devido o Java tratar os valores
+        // Como objetos a partir de agora.
+        // Qual a solução ?
+        // Quando queremos comparar objetos, usamos o método equals
+        
+         System.out.println(numero1.equals(numero2)); 
+ }
+```
+
+### 3.5. Operadores lógicos
+
+- **&&**: Operador Lógico "E".
+- **||**: Operador Lógico "OU".
+
+*Exemplo*:
+
+```Java
+// Operadores.java
+boolean condicao1=true;
+
+boolean condicao2=false;
+
+/* Aqui estamos utilizando o operador lógico E para fazer a união de duas 
+expressões. 
+É como se estivesse escrito:
+ "Se Condicao1 e Condicao2 forem verdadeiras, executar código"
+*/
+
+if(condicao1 && condicao2)
+	System.out.print("Os dois valores precisam ser verdadeiros");;
+
+//Se condicao1 OU condicao2 for verdadeira, executar código.
+if(condicao1 || condicao2)
+	System.out.print("Um dos valores precisa ser verdadeiro");
+```
+
+## 4. Métodos
+Os métodos correspondem a funções ou sub-rotinas disponíveis dentro de nossas classes. Sendo assim, todas as
+ações das aplicações são consideradas métodos.
+
+### 4.1. Critério de nomeação de métodos
+Ao seguir estas convenções, tornamos o código mais legível para nós e também para outras pessoas. Para métodos, os critérios são:
+
+- Deve ser nomeado como verbo.
+- Seguir o padrão camelCase (Todas as letras minúsculas com a exceção da primeira letra da segunda palavra).
+  
+*Exemplo*:
+```Java
+public class Exemplo(){
+    somar(int n1, int n2){}
+
+    abrirConexao(){}
+
+    concluirProcessamento() {}
+
+    findById(int id){} // não se assuste, você verá muito método em inglês em sua jornada
+
+    calcularImprimir(){} // há algo de errado neste método, ele deveria ter uma única finalidade
+
+    public static void main (String[] args){
+        //Corpo do código.
+    }
+}
+```
+
+- **O.B.S.:ATENÇÃO! Não existe em Java o conceito de métodos globais. Todos os métodos devem SEMPRE ser definidos dentro de uma classe.**
 
 
 
