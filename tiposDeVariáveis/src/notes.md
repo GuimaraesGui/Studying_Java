@@ -372,8 +372,25 @@ public class MyClass {
 }
 ```
 
-- **O.B.S.:ATENÇÃO! Não existe em Java o conceito de métodos globais. Todos os métodos devem SEMPRE ser definidos dentro de uma classe.**
-- **O.B.S Caso o método não retorne nenhum valor, ele será representado pela palavra-chave void.**
+- **O.B.S.: ATENÇÃO! Não existe em Java o conceito de métodos globais. Todos os métodos devem SEMPRE ser definidos dentro de uma classe.**
+- **O.B.S: Caso o método não retorne nenhum valor, ele será representado pela palavra-chave void.**
+
+*Exemplo 2*:
+
+```Java
+public class metodos {
+    public static void saudacao(String nome){
+        System.out.println("Seja bem-vindo, " + nome + " !");
+    }
+    public static void main(String[] args) {
+        String nome = "Guilherme";
+        
+        saudacao(nome);
+    }
+}
+```
+
+## 5. Escopo
 
 
 
