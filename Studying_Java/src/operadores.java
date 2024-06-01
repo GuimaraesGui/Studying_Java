@@ -1,4 +1,6 @@
-public class operadores {
+import java.util.Scanner;
+
+public class operadores {   
     public static float calcularMedia(int a, int b, int c) {
         float media = (a+b+c)/3F;
         
@@ -20,8 +22,21 @@ public class operadores {
         return variancia;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+        int n = 0;
+        int [] dados = new int[n];
         int a = 8, b = 15, c = 23;
+
+        System.out.println("Quantos numeros? ");
+        n = scanner.nextInt();
+
+        System.out.println("Insira os 10 valores inteiros");  
+        for(int i=0;i<n;i++){
+            System.out.println("Valor " + (i+1) + ": ");
+            dados[i] = scanner.nextInt();
+        }
+
 
         System.out.println("Média: " + calcularMedia(a, b, c));
         System.out.println("\n");
