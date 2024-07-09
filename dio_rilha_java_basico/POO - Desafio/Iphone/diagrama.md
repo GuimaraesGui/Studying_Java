@@ -1,3 +1,8 @@
+# Projeto iPhone
+
+Este projeto modela as funcionalidades de um iPhone com classes para Reprodutor Musical, Aparelho Telefônico e Navegador na Internet.
+
+````mermaid
 classDiagram
     class ReprodutorMusical {
         +void tocar()
